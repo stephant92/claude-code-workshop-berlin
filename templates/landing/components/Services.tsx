@@ -2,7 +2,7 @@ import { services } from "../content";
 
 export function Services() {
   return (
-    <section id="services" className="bg-muted px-6 py-24">
+    <section id="why" className="bg-muted px-6 py-24">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-semibold">{services.heading}</h2>
         <p className="mt-3 text-lg text-ink/65">{services.intro}</p>

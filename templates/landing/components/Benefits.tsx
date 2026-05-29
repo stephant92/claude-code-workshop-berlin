@@ -2,7 +2,7 @@ import { benefits } from "../content";
 
 export function Benefits() {
   return (
-    <section className="bg-muted px-6 py-24">
+    <section id="tips" className="px-6 py-24">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-semibold mb-12">
           {benefits.heading}

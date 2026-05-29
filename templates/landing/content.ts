@@ -5,148 +5,153 @@
 // ────────────────────────────────────────────────────────────────
 
 export const business = {
-  name: "Hartmann Coffee Roasters",
-  shortName: "Hartmann",
-  tagline: "Small-batch coffee, roasted in Kreuzberg.",
+  name: "Find your place in Berlin",
+  shortName: "Berlin Rentals",
+  tagline: "A calmer start to your Berlin flat search.",
 };
 
 export const nav = {
   links: [
-    { label: "Services", href: "#services" },
-    { label: "How it works", href: "#how" },
-    { label: "FAQ", href: "#faq" },
-    { label: "Contact", href: "#contact" },
+    { label: "Why this", href: "#why" },
+    { label: "Tips", href: "#tips" },
+    { label: "Where to look", href: "#resources" },
   ],
-  ctaLabel: "Order beans",
-  ctaHref: "#contact",
+  ctaLabel: "Start searching",
+  ctaHref: "#resources",
 };
 
 export const hero = {
-  eyebrow: "Berlin · since 2018",
-  heading: "Coffee that tastes like someone made a choice.",
+  eyebrow: "Renting in Berlin",
+  heading: "Find your place in Berlin.",
   subheading:
-    "We source single-origin beans from farms we've actually visited, roast them in small batches at our Kreuzberg studio, and deliver them to cafés and homes across Germany.",
-  ctaPrimary: { label: "Order beans", href: "#contact" },
-  ctaSecondary: { label: "See our services", href: "#services" },
+    "The Berlin housing hunt is stressful and scattered across a dozen sites. This is a calm starting point: what to know, where to look, and how to act fast when the right flat appears.",
+  ctaPrimary: { label: "See where to look", href: "#resources" },
+  ctaSecondary: { label: "Why start here", href: "#why" },
 };
 
+// "Why this" — the 3 value cards
 export const services = {
-  heading: "What we do",
+  heading: "Why start here",
   intro:
-    "Three things, done seriously.",
+    "Three things that make the search less overwhelming.",
   items: [
     {
-      title: "Wholesale roasting",
+      title: "Curated platforms",
       summary:
-        "Custom roast profiles for cafés and restaurants. We work with 23 venues across Berlin, Hamburg, and Munich. Weekly fresh delivery, transparent pricing.",
+        "The listing sites that actually matter, gathered in one place — so you're not juggling ten browser tabs and missing the good ones.",
     },
     {
-      title: "Direct-to-home subscriptions",
+      title: "Know your rights",
       summary:
-        "Choose your beans, your frequency, and your grind. We ship within 48 hours of roasting. Pause or cancel anytime, no friction.",
+        "Plain-English basics on registration, credit checks, and what a fair rental contract looks like, so nothing catches you off guard.",
     },
     {
-      title: "Barista training",
+      title: "Move fast",
       summary:
-        "Two-day intensive workshops for new café staff. Covers extraction, milk technique, and how to taste. Held in our Kreuzberg studio one Saturday a month.",
+        "Good flats are gone within hours. Know what to prepare in advance so you can reply first and stand out from the crowd.",
     },
   ],
 };
+
+// "Tips" — practical bullets for Berlin renters
+export const benefits = {
+  heading: "What every Berlin renter should know",
+  items: [
+    {
+      title: "Register your address (Anmeldung)",
+      summary:
+        "Within 14 days of moving in, register at your local Bürgeramt. You'll need this confirmation for almost everything — a bank account, taxes, even your internet contract.",
+    },
+    {
+      title: "Get your SCHUFA early",
+      summary:
+        "The SCHUFA is a credit report landlords almost always ask for. Order yours before you start viewings so you're never the applicant who has to go fetch it.",
+    },
+    {
+      title: "Check if you qualify for a WBS",
+      summary:
+        "A Wohnberechtigungsschein (WBS) unlocks cheaper, subsidised flats if your income is below a set threshold. It's free to check and can seriously widen your options.",
+    },
+    {
+      title: "Know Kaltmiete vs. Warmmiete",
+      summary:
+        "Kaltmiete is the base rent; Warmmiete adds heating and utilities on top. Always compare the Warmmiete between listings — that's the number you'll actually pay each month.",
+    },
+    {
+      title: "Prepare your application folder",
+      summary:
+        "Keep one PDF ready: ID, your last three payslips, your SCHUFA, and a short friendly intro. When a flat appears, you can apply within minutes instead of hours.",
+    },
+  ],
+};
+
+// "Resources" — real listing sites (open in a new tab)
+export const resources = {
+  heading: "Where to look",
+  intro:
+    "The main places Berliners actually find flats. Start with these.",
+  items: [
+    {
+      name: "ImmoScout24",
+      href: "https://www.immobilienscout24.de/",
+      summary:
+        "Germany's biggest listing site and the default starting point for full apartments. Set up a search alert so new listings reach you first.",
+    },
+    {
+      name: "WG-Gesucht",
+      href: "https://www.wg-gesucht.de/",
+      summary:
+        "The go-to for shared flats (WGs) and temporary sublets. Hugely popular in Berlin, especially for newcomers and students.",
+    },
+    {
+      name: "Kleinanzeigen",
+      href: "https://www.kleinanzeigen.de/",
+      summary:
+        "Formerly eBay Kleinanzeigen — lots of private, no-agent listings. Move quickly, and stay alert for the occasional scam.",
+    },
+  ],
+};
+
+export const meta = {
+  title: "Find your place in Berlin — a calm start to your flat search",
+  description:
+    "A simple, friendly starting point for renting in Berlin: what to know, where to look, and how to act fast.",
+};
+
+// ────────────────────────────────────────────────────────────────
+// HIDDEN SECTIONS — not shown on the page right now.
+// These belong to template sections we're not using (how-it-works,
+// testimonials, FAQ, contact). They're kept only so the template
+// keeps working. If you ever want one of these sections, add it back
+// in app/page.tsx and edit the text below.
+// ────────────────────────────────────────────────────────────────
 
 export const howItWorks = {
   heading: "How it works",
   steps: [
-    {
-      title: "Tell us what you like",
-      summary:
-        "Bright and fruity? Deep and chocolatey? Send us a message or take our 60-second taste quiz.",
-    },
-    {
-      title: "We send a tasting flight",
-      summary:
-        "Three 100g bags, each from a different origin. €18 including shipping. No subscription required.",
-    },
-    {
-      title: "We dial in your favorite",
-      summary:
-        "Tell us which you preferred and we'll send 250g or 1kg bags of that one, roasted to order.",
-    },
-  ],
-};
-
-export const benefits = {
-  heading: "Why us, honestly",
-  items: [
-    {
-      title: "We taste everything we send",
-      summary:
-        "Every batch is cupped before it leaves the roastery. If we wouldn't drink it, you don't get it.",
-    },
-    {
-      title: "We know our farmers",
-      summary:
-        "We work directly with seven farms across Ethiopia, Colombia, and Honduras. Two of them we visit in person each year.",
-    },
-    {
-      title: "We deliver fast or it's free",
-      summary:
-        "Beans ship within 48 hours of roasting. If your order is late, we refund the shipping. We haven't had to do that in 14 months.",
-    },
+    { title: "", summary: "" },
   ],
 };
 
 export const testimonials = {
-  heading: "What our customers say",
+  heading: "What people say",
   quotes: [
-    {
-      text:
-        "We switched to Hartmann two years ago and our regulars notice. The roasts are consistent and Andre actually visits the café to taste with us. That's not normal.",
-      author: "Lina Brückner",
-      role: "Owner, Café Erna",
-    },
-    {
-      text:
-        "I tried four roasters before settling on these guys. The Ethiopian Yirgacheffe they sent in March is the best coffee I've made at home.",
-      author: "Tomás Reiter",
-      role: "Home subscriber, Hamburg",
-    },
+    { text: "", author: "", role: "" },
   ],
 };
 
 export const faq = {
   heading: "Common questions",
   items: [
-    {
-      q: "Do you ship outside Germany?",
-      a: "Yes — we ship across the EU. Delivery takes 3–5 business days. Shipping costs vary by country.",
-    },
-    {
-      q: "How fresh are the beans when they arrive?",
-      a: "Roasted within 48 hours of shipping. We recommend brewing them within 6 weeks of the roast date printed on the bag.",
-    },
-    {
-      q: "Can I pause my subscription?",
-      a: "Anytime. Log in, pause as long as you want, restart when you're ready. No questions asked.",
-    },
-    {
-      q: "Do you do training for individuals?",
-      a: "Our group workshops are for professional baristas, but we offer one-on-one sessions on request. Email us and we'll work out a date.",
-    },
+    { q: "", a: "" },
   ],
 };
 
 export const contact = {
   heading: "Get in touch",
-  body:
-    "Wholesale questions, subscriptions, training enquiries — drop us a line. We reply within one business day.",
-  email: "hello@hartmann-coffee.example",
-  phone: "+49 30 1234 5678",
-  hours: "Mon–Fri · 09:00 — 17:00 CET",
-  address: "Oranienstraße 42, 10999 Berlin",
-};
-
-export const meta = {
-  title: "Hartmann Coffee Roasters — Small-batch coffee, Kreuzberg",
-  description:
-    "Single-origin beans, custom roasts, and barista training in Berlin.",
+  body: "",
+  email: "",
+  phone: "",
+  hours: "",
+  address: "",
 };
